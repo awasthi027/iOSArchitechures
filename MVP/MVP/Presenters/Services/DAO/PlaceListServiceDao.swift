@@ -7,6 +7,8 @@
 //
 
 import Foundation
+import CoreData
 
-class PlaceListServiceDao {
+struct PlaceListServiceDao {
+
 }

@@ -1,24 +1,28 @@
 PODS:
   - ImageCacheiOS (0.0.2)
-  - iOSHTTPConnect (0.0.1)
+  - iOSCoreDataConnect (0.0.1)
+  - iOSHTTPConnect (0.0.2)
   - iOSLoader (0.0.5)
 
 DEPENDENCIES:
   - ImageCacheiOS (~> 0.0.2)
-  - iOSHTTPConnect (~> 0.0.1)
+  - iOSCoreDataConnect (~> 0.0.1)
+  - iOSHTTPConnect (~> 0.0.2)
   - iOSLoader (~> 0.0.5)
 
 SPEC REPOS:
   trunk:
     - ImageCacheiOS
+    - iOSCoreDataConnect
     - iOSHTTPConnect
     - iOSLoader
 
 SPEC CHECKSUMS:
   ImageCacheiOS: e75f76a08e61abff421e5cbd77c54d4a79167566
-  iOSHTTPConnect: 667412c03ba23ecde053cd9e9741bf6be2fd88e8
+  iOSCoreDataConnect: 17207b3c9b49f94efc336ae51215472495750fdc
+  iOSHTTPConnect: 909da413ff36dd17382901edbcb3ec44b943575a
   iOSLoader: 3501de34f8aa74a29a32920232081a980c033a04
 
-PODFILE CHECKSUM: 694fbd24d20262b55b17320d92d7092594c4c65e
+PODFILE CHECKSUM: b2788438885dc324494c91ff58d11131a63ce350
 
 COCOAPODS: 1.8.4

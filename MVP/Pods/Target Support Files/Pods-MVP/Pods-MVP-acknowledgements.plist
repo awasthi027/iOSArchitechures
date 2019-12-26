@@ -28,6 +28,16 @@
 			<key>License</key>
 			<string>Copyright</string>
 			<key>Title</key>
+			<string>iOSCoreDataConnect</string>
+			<key>Type</key>
+			<string>PSGroupSpecifier</string>
+		</dict>
+		<dict>
+			<key>FooterText</key>
+			<string>Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.</string>
+			<key>License</key>
+			<string>Copyright</string>
+			<key>Title</key>
 			<string>iOSHTTPConnect</string>
 			<key>Type</key>
 			<string>PSGroupSpecifier</string>

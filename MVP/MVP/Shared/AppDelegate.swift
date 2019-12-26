@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import iOSCoreDataConnect
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -14,14 +15,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         self.window = UIWindow.init(frame: UIScreen.main.bounds)
-        if let viewController = PlaceListViewController.placeListViewController() {
+        if let viewController = ViewController.viewController(){
             let navigationController = UINavigationController.init(rootViewController: viewController)
             self.window?.rootViewController = navigationController
             self.window?.makeKeyAndVisible()
         }
-       
-       // SharedApplication.shared.setupReachability(nil, useClosures: true)
-       // self.naviagtionBarSettings()
+        DataManager.setUp(withDataModelName: "MVP", bundle: Bundle.main, persistentStoreName: "MVP")
+        SharedApplication.shared.setupReachability(nil, useClosures: true)
+        self.naviagtionBarSettings()
         return true
     }
 
@@ -33,13 +34,12 @@ extension AppDelegate {
     func naviagtionBarSettings() {
         let app = UINavigationBar.appearance()
         app.isTranslucent = false
-//        app.barTintColor = .themeColor
-//        app.tintColor = .navigationTitleColor//
-//        if let fontItem =  UIFont.baseThemeMediumFont(size: 16.0) {
-//            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: fontItem]
-//            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.navigationTitleColor]
-//        }
-       
+        app.barTintColor = .themeColor
+        app.tintColor = .navigationTitleColor//
+        if let fontItem =  UIFont.baseThemeMediumFont(size: 16.0) {
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.font: fontItem]
+            UINavigationBar.appearance().titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.navigationTitleColor]
+        }
     }
 }
 

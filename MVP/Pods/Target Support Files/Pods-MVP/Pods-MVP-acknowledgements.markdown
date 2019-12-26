@@ -5,6 +5,10 @@ This application makes use of the following third party libraries:
 
 Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.
 
+## iOSCoreDataConnect
+
+Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.
+
 ## iOSHTTPConnect
 
 Created and licensed by Ashish Awasthi. Copyright 2019 Ashish Awasthi. All rights reserved.

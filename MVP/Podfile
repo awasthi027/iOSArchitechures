@@ -1,16 +1,21 @@
 # Uncomment the next line to define a global platform for your project
 
- platform :ios, '10.0'
+platform :ios, '10.0'
 
 target 'MVP' do
 
   # Comment the next line if you don't want to use dynamic frameworks
   use_frameworks!
-  # pod 'iOSLoader', :path => '/Users/chandrakant/Desktop/R&D/iOSLoader' # Acmes from local
+  pod 'iOSLoader', '~> 0.0.5'    # comment cocoaPodLink
 
-  pod 'iOSLoader', '~> 0.0.5' # comment cocoaPodLink
-  pod 'ImageCacheiOS', '~> 0.0.2' # comment cocoaPodLink
-  pod 'iOSHTTPConnect', '~> 0.0.1' # comment cocoaPodLink
+  pod 'ImageCacheiOS', '~> 0.0.2'     # comment cocoaPodLink
+
+  pod 'iOSHTTPConnect', '~> 0.0.2'    # comment cocoaPodLink
+
+  pod 'iOSCoreDataConnect', '~> 0.0.1'    # comment cocoaPodLink
+
+ # pod 'iOSHTTPConnect', :path => '/Users/chandrakant/Desktop/R&D/iOSHTTPConnect' 
+
 
   # Pods for MVP
 

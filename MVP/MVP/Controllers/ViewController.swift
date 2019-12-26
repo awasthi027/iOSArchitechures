@@ -8,17 +8,19 @@
 
 import UIKit
 
-class PlaceListViewController: UIViewController {
+class ViewController: UIViewController {
     let presenter = PlaceListPresenter()
-    
-   class func placeListViewController() -> PlaceListViewController? {
+    let myAccountPresenter = MyMyAccountPresenter()
+   class func viewController() -> ViewController? {
          let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
-         return storyBoard.instantiateViewController(withIdentifier: String(describing: PlaceListViewController.self)) as? PlaceListViewController
+         return storyBoard.instantiateViewController(withIdentifier: String(describing: ViewController.self)) as? ViewController
      }
      
     override func viewDidLoad() {
         super.viewDidLoad()
-        presenter.listOfPlaces { (isSuccess) in
+        /* presenter.listOfPlaces { (isSuccess) in
+        } */
+        myAccountPresenter.usersList { (isSuccess) in
             
         }
         // Do any additional setup after loading the view.

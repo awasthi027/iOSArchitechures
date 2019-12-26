@@ -9,10 +9,9 @@
 import Foundation
 import iOSHTTPConnect
 
-class PlaceListService {
+struct PlaceListService {
     
-   static func listOfPlaces(complete: @escaping(_ placeInfo: PlaceInfo?, _ error: Error?) ->Void) {
-       // weak var weakSelf = self
+    static func listOfPlaces(complete: @escaping(_ placeInfo: PlaceInfo?, _ error: Error?) ->Void) {
         let requestForm = RequestForm.init(with: .ePlaces, api: .ePlaceList, postParam: [:])
         ModelController.shared.processRequest(requestForm: requestForm, jsonObjType: PlaceInfo.self) { (result) in
             if let errorItem = result.error {

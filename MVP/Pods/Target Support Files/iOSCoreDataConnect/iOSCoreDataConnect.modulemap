@@ -1,0 +1,6 @@
+framework module iOSCoreDataConnect {
+  umbrella header "iOSCoreDataConnect-umbrella.h"
+
+  export *
+  module * { export * }
+}
