@@ -8,7 +8,8 @@
 
 import Foundation
 
-let targetName = Bundle.main.object(forInfoDictionaryKey: "CFBundleName") as? String ?? ""
+let frameworkVersion = "0.0.2"
+let frameworkName = "iOSCoreDataConnect"
 
 internal func pretty_print(_ message: String, file: String = #file, function: String = #function, line: Int = #line) {
 	FSLogInfo(message, file: file, function: function, line: line)
@@ -38,7 +39,7 @@ fileprivate class FSLoggerDate {
 internal func FSLogDebug(_ message: String, file: String = #file, function: String = #function, line: Int = #line) {
     let f = (file as NSString).lastPathComponent
 	let d = FSLoggerDate.dateNow()
-    print("\(d) \(targetName) 📘 \(f) \(function) \(message)")
+    print("\(d) \(frameworkName) 📘 \(f) \(function) \(message)")
 }
 #endif
 
@@ -46,9 +47,9 @@ internal func FSLogInfo(_ message: String, file: String = #file, function: Strin
 	let f = (file as NSString).lastPathComponent
 	let d = FSLoggerDate.dateNow()
 #if DEBUG
-	print("\(d) \(targetName) 📒 \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) 📒 \(f) \(function) \(message)")
 #else
-	print("\(d) \(targetName) INFO \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) INFO \(f) \(function) \(message)")
 #endif
 }
 
@@ -56,9 +57,9 @@ internal func FSLogWarning(_ message: String, file: String = #file, function: St
 	let f = (file as NSString).lastPathComponent
 	let d = FSLoggerDate.dateNow()
 #if DEBUG
-	print("\(d) \(targetName) 📙 \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) 📙 \(f) \(function) \(message)")
 #else
-	print("\(d) \(targetName) WARNING \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) WARNING \(f) \(function) \(message)")
 #endif
 }
 
@@ -66,8 +67,17 @@ internal func FSLogError(_ message: String, file: String = #file, function: Stri
 	let f = (file as NSString).lastPathComponent
 	let d = FSLoggerDate.dateNow()
 #if DEBUG
-	print("\(d) \(targetName) 📕 \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) 📕 \(f) \(function) \(message)")
 #else
-	print("\(d) \(targetName) ERROR \(f) \(function) \(message)")
+	print("\(d) \(frameworkName) ERROR \(f) \(function) \(message)")
 #endif
+}
+
+internal func FSFrameworkVersion() {
+    let d = FSLoggerDate.dateNow()
+    #if DEBUG
+      print("\(d) \(frameworkName) : 📒 \(frameworkVersion)")
+    #else
+        print("\(d) Info \(frameworkVersion)")
+    #endif
 }

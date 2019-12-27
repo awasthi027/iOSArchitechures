@@ -95,6 +95,7 @@ public final class DataManager {
         DataManager.dataModelBundle = bundle
         DataManager.persistentStoreName = persistentStoreName
         DataManager.persistentStoreType = persistentStoreType
+        FSFrameworkVersion()
     }
     
     // MARK: Core Data Stack

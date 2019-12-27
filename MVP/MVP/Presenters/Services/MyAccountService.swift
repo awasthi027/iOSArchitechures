@@ -21,7 +21,7 @@ struct MyAccountService {
             }
             return
         }
-        let requestForm = RequestForm.init(with: .eMyAccount, api: .eUsersList, postParam: [:])
+        let requestForm = RequestForm.init(with: .eMyAccount, api: .eUsersList)
         ModelController.shared.processRequest(requestForm: requestForm, jsonObjType: UserProfileList.self) { (result) in
             if let errorItem = result.error {
                 complete(nil, errorItem)

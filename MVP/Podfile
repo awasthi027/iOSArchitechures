@@ -10,9 +10,9 @@ target 'MVP' do
 
   pod 'ImageCacheiOS', '~> 0.0.2'     # comment cocoaPodLink
 
-  pod 'iOSHTTPConnect', '~> 0.0.2'    # comment cocoaPodLink
+  pod 'iOSHTTPConnect', '~> 0.0.4'    # comment cocoaPodLink
 
-  pod 'iOSCoreDataConnect', '~> 0.0.1'    # comment cocoaPodLink
+  pod 'iOSCoreDataConnect', '~> 0.0.2'    # comment cocoaPodLink
 
  # pod 'iOSHTTPConnect', :path => '/Users/chandrakant/Desktop/R&D/iOSHTTPConnect' 
 

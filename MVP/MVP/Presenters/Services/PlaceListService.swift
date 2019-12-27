@@ -12,7 +12,7 @@ import iOSHTTPConnect
 struct PlaceListService {
     
     static func listOfPlaces(complete: @escaping(_ placeInfo: PlaceInfo?, _ error: Error?) ->Void) {
-        let requestForm = RequestForm.init(with: .ePlaces, api: .ePlaceList, postParam: [:])
+        let requestForm = RequestForm.init(with: .ePlaces, api: .ePlaceList)
         ModelController.shared.processRequest(requestForm: requestForm, jsonObjType: PlaceInfo.self) { (result) in
             if let errorItem = result.error {
                 complete(nil, errorItem)
