@@ -11,7 +11,8 @@ import UIKit
 class ViewController: UIViewController {
     let presenter = PlaceListPresenter()
     let myAccountPresenter = MyMyAccountPresenter()
-   class func viewController() -> ViewController? {
+    
+    class func viewController() -> ViewController? {
          let storyBoard = UIStoryboard.init(name: "Main", bundle: nil)
          return storyBoard.instantiateViewController(withIdentifier: String(describing: ViewController.self)) as? ViewController
      }
@@ -25,6 +26,8 @@ class ViewController: UIViewController {
         }
         // Do any additional setup after loading the view.
     }
+    
+    
     
 
     /*

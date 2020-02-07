@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+
+platform :ios, '10.0'
+
+target 'Viper' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Viper
+
+  pod 'iOSLoader', '~> 0.0.5'    # comment cocoaPodLink
+
+  pod 'ImageCacheiOS', '~> 0.0.2'     # comment cocoaPodLink
+
+  pod 'iOSHTTPConnect', '~> 0.0.9'    # comment cocoaPodLink
+
+  pod 'iOSCoreDataConnect', '~> 0.0.2'    # comment cocoaPodLink
+
+ # pod 'iOSHTTPConnect', :path => '/Users/chandrakant/Desktop/R&D/iOSHTTPConnect' 
+
+
+  target 'ViperTests' do
+    inherit! :search_paths
+    # Pods for testing
+  end
+
+  target 'ViperUITests' do
+    # Pods for testing
+  end
+
+end
