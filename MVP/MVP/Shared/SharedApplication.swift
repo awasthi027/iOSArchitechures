@@ -13,7 +13,7 @@ class SharedApplication {
        static let shared = SharedApplication()
        var token: String = ""
        var reachability: Reachability?
-       let noNetworkView: CustomNoNetworkView = CustomNoNetworkView.init(frame:  CGRect(x: xPosition, y: CustomNoNetworkView.yPositionOfLabel(withDirection: .eTop), width: (UIScreen.main.bounds.size.width - 2*xPosition) , height: NavigationViewHeight ))
+       let noNetworkView: CustomNoNetworkView = CustomNoNetworkView.init(frame:  CGRect(x: xPosition, y: CustomNoNetworkView.yPositionOfLabel(withDirection: .eTop), width: (UIScreen.main.bounds.size.width - 2*xPosition) , height: NavigationViewHeight))
        private init() {}
        deinit { }
        func setupReachability(_ hostName: String?, useClosures: Bool) {
