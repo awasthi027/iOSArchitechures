@@ -21,7 +21,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             self.window?.makeKeyAndVisible()
         }
         DataManager.setUp(withDataModelName: "MVP", bundle: Bundle.main, persistentStoreName: "MVP")
-        SharedApplication.shared.setupReachability(nil, useClosures: true)
         self.naviagtionBarSettings()
         return true
     }

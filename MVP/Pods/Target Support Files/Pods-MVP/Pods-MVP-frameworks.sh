@@ -165,12 +165,14 @@ if [[ "$CONFIGURATION" == "Debug" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/iOSCoreDataConnect/iOSCoreDataConnect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iOSHTTPConnect/iOSHTTPConnect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iOSLoader/iOSLoader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSReachability/iOSReachability.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
   install_framework "${BUILT_PRODUCTS_DIR}/ImageCacheiOS/ImageCacheiOS.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iOSCoreDataConnect/iOSCoreDataConnect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iOSHTTPConnect/iOSHTTPConnect.framework"
   install_framework "${BUILT_PRODUCTS_DIR}/iOSLoader/iOSLoader.framework"
+  install_framework "${BUILT_PRODUCTS_DIR}/iOSReachability/iOSReachability.framework"
 fi
 if [ "${COCOAPODS_PARALLEL_CODE_SIGN}" == "true" ]; then
   wait

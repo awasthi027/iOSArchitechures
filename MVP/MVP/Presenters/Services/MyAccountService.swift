@@ -8,22 +8,17 @@
 
 import Foundation
 import iOSHTTPConnect
-
 struct MyAccountService {
     
     static func userProfileInfo(complete: @escaping(_ userProfileList: UserProfileList?, _ error: Error?) ->Void) {
-        if ReachabilityManager.shared.isNetworkAvailable == false {
-            SharedApplication.shared.noNetworkView.showNoInterNetConnectionMessage()
-            if let userProfileList = MyAccountServiceDao.listOfUsers() {
-                complete(userProfileList, nil)
-            }else {
-              complete(nil, nil)
-            }
-            return
-        }
         let requestForm = RequestForm.init(with: .eMyAccount, api: .eUsersList)
         ModelController.shared.processRequest(requestForm: requestForm, jsonObjType: UserProfileList.self) { (result) in
-            if let errorItem = result.error {
+            if let errorItem = result.error as NSError? {
+                if  let userProfileList = MyAccountServiceDao.listOfUsers(), errorItem.code == 10004 {// No Internet code
+                    complete(userProfileList, nil)
+                }else {
+                    complete(nil, nil)
+                }
                 complete(nil, errorItem)
             }else {
                 if result.isSuccess, let dict = result.value, let profileList = dict[kResponse] as? UserProfileList {

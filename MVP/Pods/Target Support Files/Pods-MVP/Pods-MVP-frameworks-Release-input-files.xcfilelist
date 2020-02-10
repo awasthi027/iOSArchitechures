@@ -3,3 +3,4 @@ ${BUILT_PRODUCTS_DIR}/ImageCacheiOS/ImageCacheiOS.framework
 ${BUILT_PRODUCTS_DIR}/iOSCoreDataConnect/iOSCoreDataConnect.framework
 ${BUILT_PRODUCTS_DIR}/iOSHTTPConnect/iOSHTTPConnect.framework
 ${BUILT_PRODUCTS_DIR}/iOSLoader/iOSLoader.framework
+${BUILT_PRODUCTS_DIR}/iOSReachability/iOSReachability.framework

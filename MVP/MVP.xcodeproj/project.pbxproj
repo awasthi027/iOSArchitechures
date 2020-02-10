@@ -14,12 +14,9 @@
 		CB159BE923B3B4CB003EB95B /* PlaceListServiceDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB159BE823B3B4CB003EB95B /* PlaceListServiceDao.swift */; };
 		CB159BEB23B3B98C003EB95B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB159BEA23B3B98C003EB95B /* ViewController.swift */; };
 		CB159BED23B3B9A2003EB95B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB159BEC23B3B9A2003EB95B /* Main.storyboard */; };
-		CB1C3C6423B47E9900AE370E /* CustomNoNetworkView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C6323B47E9900AE370E /* CustomNoNetworkView.swift */; };
 		CB1C3C7023B47F6800AE370E /* UIColor+SprintPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C6D23B47F6800AE370E /* UIColor+SprintPalette.swift */; };
 		CB1C3C7123B47F6800AE370E /* Contant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C6E23B47F6800AE370E /* Contant.swift */; };
 		CB1C3C7223B47F6800AE370E /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C6F23B47F6800AE370E /* StringExtension.swift */; };
-		CB1C3C7723B47F7700AE370E /* ReachabilityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C7423B47F7700AE370E /* ReachabilityManager.swift */; };
-		CB1C3C7823B47F7700AE370E /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C7523B47F7700AE370E /* Reachability.swift */; };
 		CB1C3C7A23B47FD500AE370E /* SharedApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C7923B47FD500AE370E /* SharedApplication.swift */; };
 		CB1C3C7C23B480E500AE370E /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C7B23B480E500AE370E /* UIFont+Extension.swift */; };
 		CB1C3C7E23B482AF00AE370E /* UserProfileInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB1C3C7D23B482AF00AE370E /* UserProfileInfo.swift */; };
@@ -66,13 +63,9 @@
 		CB159BE823B3B4CB003EB95B /* PlaceListServiceDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlaceListServiceDao.swift; sourceTree = "<group>"; };
 		CB159BEA23B3B98C003EB95B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB159BEC23B3B9A2003EB95B /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		CB1C3C6323B47E9900AE370E /* CustomNoNetworkView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomNoNetworkView.swift; sourceTree = "<group>"; };
 		CB1C3C6D23B47F6800AE370E /* UIColor+SprintPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SprintPalette.swift"; sourceTree = "<group>"; };
 		CB1C3C6E23B47F6800AE370E /* Contant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contant.swift; sourceTree = "<group>"; };
 		CB1C3C6F23B47F6800AE370E /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
-		CB1C3C7423B47F7700AE370E /* ReachabilityManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReachabilityManager.swift; sourceTree = "<group>"; };
-		CB1C3C7523B47F7700AE370E /* Reachability.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		CB1C3C7623B47F7700AE370E /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
 		CB1C3C7923B47FD500AE370E /* SharedApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedApplication.swift; sourceTree = "<group>"; };
 		CB1C3C7B23B480E500AE370E /* UIFont+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
 		CB1C3C7D23B482AF00AE370E /* UserProfileInfo.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProfileInfo.swift; sourceTree = "<group>"; };
@@ -166,16 +159,6 @@
 				CB1C3C7B23B480E500AE370E /* UIFont+Extension.swift */,
 			);
 			path = Utility;
-			sourceTree = "<group>";
-		};
-		CB1C3C7323B47F7700AE370E /* Reachbility */ = {
-			isa = PBXGroup;
-			children = (
-				CB1C3C7423B47F7700AE370E /* ReachabilityManager.swift */,
-				CB1C3C7523B47F7700AE370E /* Reachability.swift */,
-				CB1C3C7623B47F7700AE370E /* Reachability.h */,
-			);
-			path = Reachbility;
 			sourceTree = "<group>";
 		};
 		CB1C3C8A23B4873900AE370E /* CoreData */ = {
@@ -300,20 +283,10 @@
 		CB9A14D823AF533C00220856 /* Custom */ = {
 			isa = PBXGroup;
 			children = (
-				CB1C3C7323B47F7700AE370E /* Reachbility */,
 				CB1C3C6C23B47F6800AE370E /* Utility */,
 				CB9A14DA23AF536600220856 /* Library */,
-				CB9A14D923AF533C00220856 /* Classes */,
 			);
 			path = Custom;
-			sourceTree = "<group>";
-		};
-		CB9A14D923AF533C00220856 /* Classes */ = {
-			isa = PBXGroup;
-			children = (
-				CB1C3C6323B47E9900AE370E /* CustomNoNetworkView.swift */,
-			);
-			path = Classes;
 			sourceTree = "<group>";
 		};
 		CB9A14DA23AF536600220856 /* Library */ = {
@@ -585,11 +558,9 @@
 			files = (
 				CB9A14CF23AF529800220856 /* AppDelegate.swift in Sources */,
 				CB1C3C8E23B4878B00AE370E /* UserProfileTable+CoreDataClass.swift in Sources */,
-				CB1C3C6423B47E9900AE370E /* CustomNoNetworkView.swift in Sources */,
 				CB159BE923B3B4CB003EB95B /* PlaceListServiceDao.swift in Sources */,
 				CB1C3C7C23B480E500AE370E /* UIFont+Extension.swift in Sources */,
 				CB159BEB23B3B98C003EB95B /* ViewController.swift in Sources */,
-				CB1C3C7723B47F7700AE370E /* ReachabilityManager.swift in Sources */,
 				CB9A14DD23AF69EF00220856 /* PlaceListPresenter.swift in Sources */,
 				CB159BE623B3B474003EB95B /* PlaceInfo.swift in Sources */,
 				CB1C3C7223B47F6800AE370E /* StringExtension.swift in Sources */,
@@ -602,7 +573,6 @@
 				CB1C3C7E23B482AF00AE370E /* UserProfileInfo.swift in Sources */,
 				CB9A14DF23AFA76900220856 /* PlaceListService.swift in Sources */,
 				CB1C3CA123B4B82D00AE370E /* MVP.xcdatamodeld in Sources */,
-				CB1C3C7823B47F7700AE370E /* Reachability.swift in Sources */,
 				CB1C3C7A23B47FD500AE370E /* SharedApplication.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
