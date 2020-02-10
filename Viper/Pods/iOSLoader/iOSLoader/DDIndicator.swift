@@ -40,7 +40,7 @@ class DDIndicator: UIView {
     
     func stopAnimating() {
         DispatchQueue.main.async {
-         self.isHidden = true
+            self.isHidden = true
         }
         if let item = timer {
             item.invalidate()

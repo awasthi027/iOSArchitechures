@@ -8,7 +8,7 @@ target 'Viper' do
 
   # Pods for Viper
 
-  pod 'iOSLoader', '~> 0.0.5'    # comment cocoaPodLink
+  pod 'iOSLoader', '~> 0.0.6'    # comment cocoaPodLink
 
   pod 'ImageCacheiOS', '~> 0.0.2'     # comment cocoaPodLink
 

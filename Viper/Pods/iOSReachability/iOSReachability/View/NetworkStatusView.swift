@@ -68,9 +68,7 @@ let xPosition: CGFloat = 40.0
     }
     
      func displayInternetStatus() {
-        DispatchQueue.main.async {
-          self.moveTitleView(inDirection: .eBottom)
-        }
+        self.moveTitleView(inDirection: .eBottom)
         DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + 3.0) {
             self.moveTitleView(inDirection: .eTop)
         }
