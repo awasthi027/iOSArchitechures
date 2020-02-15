@@ -12,7 +12,7 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
      var window: UIWindow?
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        if let view = NoticeRouter.createModule() {
+        if let view = NoticeRouter.createModule(controller: .movieVC){
           let navigationController = UINavigationController.init(rootViewController: view)
           self.window?.rootViewController = navigationController
         }

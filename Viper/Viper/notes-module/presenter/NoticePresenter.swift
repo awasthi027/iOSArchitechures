@@ -8,29 +8,27 @@
 
 import Foundation
 import UIKit
+import iOSHTTPConnect
 
-class NoticePresenter: ViewToPresenterProtocol {
-    var view: PresenterToViewProtocol?
+class NoticePresenter: ViewToPresenterProtocal {
     
-    var interactor: PresenterToInteractorProtocol?
-    
-    var router: PresenterToRouterProtocol?
-    
-    func startFetchingNotice() {
-        interactor?.fetchNotice()
+    func landOn(controller: NavigationControllerClass, navigationController: UINavigationController?) {
+        router?.redirectOn(controller: controller, navigationController: navigationController)
     }
-    func showMovieController(navigationController: UINavigationController) {
-        router?.pushToMovieScreen(navigationConroller:navigationController)
+    func makeRequestToGetData(request: APIRequestType) {
+        interactor?.startToRequestToGetData(request: request)
     }
+    var view: PresenterToViewProtocal?
+    
+    var interactor: PresenterToInteractorProtocal?
+    
+    var router: PresenterToRouterProtocal?
     
 }
-extension NoticePresenter: InteractorToPresenterProtocol {
-    
-    func noticeFetchedSuccess(noticeModelArray: [NoticeModel]) {
-        view?.showNotice(noticeArray: noticeModelArray)
-    }
-    
-    func noticeFetchFailed(_ error: Error?) {
-        view?.showError(error)
+
+extension NoticePresenter: InteractorToPresenterProtocal {
+    func serviceResponse(_ result: APIResult<[String : Any]>, _ resultRequest: APIRequestType) {
+        self.view?.seviceResponseToView(result, resultRequest)
     }
 }
+

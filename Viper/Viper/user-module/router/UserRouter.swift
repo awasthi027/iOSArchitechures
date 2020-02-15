@@ -1,20 +1,20 @@
 //
-//  NoticeRouter.swift
+//  MovieRouter.swift
 //  Viper
 //
-//  Created by Ashish Awasthi on 06/02/20.
+//  Created by Ashish Awasthi on 15/02/20.
 //  Copyright © 2020 Ashish Awasthi. All rights reserved.
 //
 
 import Foundation
 import UIKit
 
-class NoticeRouter: PresenterToRouterProtocal {
+class UserRouter: PresenterToRouterProtocal {
     
    static func createModule(controller: NavigationControllerClass) ->UIViewController? {
-        if let view = NoticeViewController.noticeViewController() {
-            let presenter: ViewToPresenterProtocal & InteractorToPresenterProtocal = NoticePresenter()
-            let interactor: PresenterToInteractorProtocal = NoticeInteractor()
+        if let view = UserListViewController.userListViewController() {
+            let presenter: ViewToPresenterProtocal & InteractorToPresenterProtocal = UserListPresenter()
+            let interactor: PresenterToInteractorProtocal = UserListInteractor()
             let router: PresenterToRouterProtocal = NoticeRouter()
             view.presenter = presenter
             presenter.view = view
