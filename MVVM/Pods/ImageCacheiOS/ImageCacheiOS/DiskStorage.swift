@@ -52,16 +52,16 @@ extension DiskStorage: Storage {
     public func removeImage(forKey key: String) {
         storageQueue.async { [weak self] in
             guard let path = self?.defaultStoragePath(forKey: key) else { return }
-            let _ = try? self?.fileManager.removeItem(atPath: path)
+            let _ = ((try? self?.fileManager.removeItem(atPath: path)) as ()??)
         }
     }
     
     public func clearStorage() {
         storageQueue.async { [weak self] in
             guard let path = self?.storagePath else { return }
-            let _ = try? self?.fileManager.removeItem(atPath: path)
-            let _ = try? self?.fileManager.createDirectory(atPath: path, withIntermediateDirectories: true,
-                                                           attributes: nil)
+            let _ = ((try? self?.fileManager.removeItem(atPath: path)) as ()??)
+            let _ = ((try? self?.fileManager.createDirectory(atPath: path, withIntermediateDirectories: true,
+                                                           attributes: nil)) as ()??)
         }
     }
     

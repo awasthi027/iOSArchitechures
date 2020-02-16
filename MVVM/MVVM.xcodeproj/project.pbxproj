@@ -3,20 +3,35 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0BDDA67DD35439A21EC51AB7 /* Pods_MVVMTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F3ED85B9D1D7513D5586F7A /* Pods_MVVMTests.framework */; };
 		AFA723400E2BF64939387EB6 /* Pods_MVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 87F0493A9E436524F853754F /* Pods_MVVM.framework */; };
-		CB54A8E923F83A5700F5CCD3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54A8E823F83A5700F5CCD3 /* AppDelegate.swift */; };
-		CB54A8EB23F83A5700F5CCD3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54A8EA23F83A5700F5CCD3 /* SceneDelegate.swift */; };
-		CB54A8ED23F83A5700F5CCD3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54A8EC23F83A5700F5CCD3 /* ViewController.swift */; };
 		CB54A8F023F83A5700F5CCD3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB54A8EE23F83A5700F5CCD3 /* Main.storyboard */; };
 		CB54A8F223F83A5900F5CCD3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CB54A8F123F83A5900F5CCD3 /* Assets.xcassets */; };
 		CB54A8F523F83A5900F5CCD3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB54A8F323F83A5900F5CCD3 /* LaunchScreen.storyboard */; };
 		CB54A90023F83A5900F5CCD3 /* MVVMTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54A8FF23F83A5900F5CCD3 /* MVVMTests.swift */; };
 		CB54A90B23F83A5900F5CCD3 /* MVVMUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB54A90A23F83A5900F5CCD3 /* MVVMUITests.swift */; };
+		CB55162E23F9110600CF507F /* NoticeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55162D23F9110600CF507F /* NoticeService.swift */; };
+		CB55163323F9122A00CF507F /* MVVM.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = CB55163123F9122A00CF507F /* MVVM.xcdatamodeld */; };
+		CB55163623F9130600CF507F /* NoticeTable+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55163423F9130600CF507F /* NoticeTable+CoreDataProperties.swift */; };
+		CB55163723F9130600CF507F /* NoticeTable+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55163523F9130600CF507F /* NoticeTable+CoreDataClass.swift */; };
+		CB55163923F9154F00CF507F /* NoticeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55163823F9154F00CF507F /* NoticeViewModel.swift */; };
+		CB55164B23F916B200CF507F /* UIFont+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55164723F916B200CF507F /* UIFont+Extension.swift */; };
+		CB55164C23F916B200CF507F /* UIColor+SprintPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55164823F916B200CF507F /* UIColor+SprintPalette.swift */; };
+		CB55164D23F916B200CF507F /* Contant.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55164923F916B200CF507F /* Contant.swift */; };
+		CB55164E23F916B200CF507F /* StringExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55164A23F916B200CF507F /* StringExtension.swift */; };
+		CB55165023F9185C00CF507F /* MovieCellVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55164F23F9185C00CF507F /* MovieCellVM.swift */; };
+		CB55165323F91A2A00CF507F /* LogHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55165223F91A2A00CF507F /* LogHelper.swift */; };
+		CB55165623F91ABA00CF507F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CB55165523F91ABA00CF507F /* AppDelegate.swift */; };
+		CB55165A23F91ADE00CF507F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB55165823F91ADE00CF507F /* LaunchScreen.storyboard */; };
+		CB55165B23F91ADE00CF507F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CB55165923F91ADE00CF507F /* Main.storyboard */; };
+		CBFD798123F90B4800258610 /* NoticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD798023F90B4800258610 /* NoticeViewController.swift */; };
+		CBFD798323F90B5100258610 /* NoticeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD798223F90B5100258610 /* NoticeModel.swift */; };
+		CBFD798523F90B7400258610 /* MovieCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD798423F90B7400258610 /* MovieCell.swift */; };
+		CBFD799323F90CAC00258610 /* NoticeServiceDao.swift in Sources */ = {isa = PBXBuildFile; fileRef = CBFD799223F90CAC00258610 /* NoticeServiceDao.swift */; };
 		F1CE191FC4C1ED98DFB47E6B /* Pods_MVVM_MVVMUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 19F1F482092BD1115D20E1BF /* Pods_MVVM_MVVMUITests.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,9 +62,6 @@
 		A293BCA72F5775D2CDBC509A /* Pods-MVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM.release.xcconfig"; path = "Target Support Files/Pods-MVVM/Pods-MVVM.release.xcconfig"; sourceTree = "<group>"; };
 		CA074D683C0FFA7D0702E8B9 /* Pods-MVVMTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVMTests.debug.xcconfig"; path = "Target Support Files/Pods-MVVMTests/Pods-MVVMTests.debug.xcconfig"; sourceTree = "<group>"; };
 		CB54A8E523F83A5700F5CCD3 /* MVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		CB54A8E823F83A5700F5CCD3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CB54A8EA23F83A5700F5CCD3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		CB54A8EC23F83A5700F5CCD3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CB54A8EF23F83A5700F5CCD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CB54A8F123F83A5900F5CCD3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CB54A8F423F83A5900F5CCD3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -60,6 +72,24 @@
 		CB54A90623F83A5900F5CCD3 /* MVVMUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MVVMUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CB54A90A23F83A5900F5CCD3 /* MVVMUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMUITests.swift; sourceTree = "<group>"; };
 		CB54A90C23F83A5900F5CCD3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CB55162D23F9110600CF507F /* NoticeService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeService.swift; sourceTree = "<group>"; };
+		CB55163223F9122A00CF507F /* MVVM.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = MVVM.xcdatamodel; sourceTree = "<group>"; };
+		CB55163423F9130600CF507F /* NoticeTable+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoticeTable+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		CB55163523F9130600CF507F /* NoticeTable+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NoticeTable+CoreDataClass.swift"; sourceTree = "<group>"; };
+		CB55163823F9154F00CF507F /* NoticeViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewModel.swift; sourceTree = "<group>"; };
+		CB55164723F916B200CF507F /* UIFont+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+Extension.swift"; sourceTree = "<group>"; };
+		CB55164823F916B200CF507F /* UIColor+SprintPalette.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+SprintPalette.swift"; sourceTree = "<group>"; };
+		CB55164923F916B200CF507F /* Contant.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Contant.swift; sourceTree = "<group>"; };
+		CB55164A23F916B200CF507F /* StringExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StringExtension.swift; sourceTree = "<group>"; };
+		CB55164F23F9185C00CF507F /* MovieCellVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCellVM.swift; sourceTree = "<group>"; };
+		CB55165223F91A2A00CF507F /* LogHelper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LogHelper.swift; sourceTree = "<group>"; };
+		CB55165523F91ABA00CF507F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CB55165823F91ADE00CF507F /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CB55165923F91ADE00CF507F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		CBFD798023F90B4800258610 /* NoticeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeViewController.swift; sourceTree = "<group>"; };
+		CBFD798223F90B5100258610 /* NoticeModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeModel.swift; sourceTree = "<group>"; };
+		CBFD798423F90B7400258610 /* MovieCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCell.swift; sourceTree = "<group>"; };
+		CBFD799223F90CAC00258610 /* NoticeServiceDao.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoticeServiceDao.swift; sourceTree = "<group>"; };
 		FBA37BA77CEA4F9CFFB8F4BB /* Pods-MVVM-MVVMUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-MVVM-MVVMUITests.debug.xcconfig"; path = "Target Support Files/Pods-MVVM-MVVMUITests/Pods-MVVM-MVVMUITests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -101,7 +131,6 @@
 				CA074D683C0FFA7D0702E8B9 /* Pods-MVVMTests.debug.xcconfig */,
 				A0FEE89E1A18857980775665 /* Pods-MVVMTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -140,9 +169,11 @@
 		CB54A8E723F83A5700F5CCD3 /* MVVM */ = {
 			isa = PBXGroup;
 			children = (
-				CB54A8E823F83A5700F5CCD3 /* AppDelegate.swift */,
-				CB54A8EA23F83A5700F5CCD3 /* SceneDelegate.swift */,
-				CB54A8EC23F83A5700F5CCD3 /* ViewController.swift */,
+				CB55165723F91ADE00CF507F /* storyboard */,
+				CB55165423F91ABA00CF507F /* shared */,
+				CB55164523F916B200CF507F /* custom */,
+				CB55163023F9121C00CF507F /* resources */,
+				CBFD797C23F90B0900258610 /* notice-module */,
 				CB54A8EE23F83A5700F5CCD3 /* Main.storyboard */,
 				CB54A8F123F83A5900F5CCD3 /* Assets.xcassets */,
 				CB54A8F323F83A5900F5CCD3 /* LaunchScreen.storyboard */,
@@ -167,6 +198,123 @@
 				CB54A90C23F83A5900F5CCD3 /* Info.plist */,
 			);
 			path = MVVMUITests;
+			sourceTree = "<group>";
+		};
+		CB55162F23F911FC00CF507F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				CB55163523F9130600CF507F /* NoticeTable+CoreDataClass.swift */,
+				CB55163423F9130600CF507F /* NoticeTable+CoreDataProperties.swift */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		CB55163023F9121C00CF507F /* resources */ = {
+			isa = PBXGroup;
+			children = (
+				CB55163123F9122A00CF507F /* MVVM.xcdatamodeld */,
+			);
+			path = resources;
+			sourceTree = "<group>";
+		};
+		CB55164523F916B200CF507F /* custom */ = {
+			isa = PBXGroup;
+			children = (
+				CB55165123F91A2A00CF507F /* Logger */,
+				CB55164623F916B200CF507F /* Utility */,
+			);
+			path = custom;
+			sourceTree = "<group>";
+		};
+		CB55164623F916B200CF507F /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				CB55164723F916B200CF507F /* UIFont+Extension.swift */,
+				CB55164823F916B200CF507F /* UIColor+SprintPalette.swift */,
+				CB55164923F916B200CF507F /* Contant.swift */,
+				CB55164A23F916B200CF507F /* StringExtension.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		CB55165123F91A2A00CF507F /* Logger */ = {
+			isa = PBXGroup;
+			children = (
+				CB55165223F91A2A00CF507F /* LogHelper.swift */,
+			);
+			path = Logger;
+			sourceTree = "<group>";
+		};
+		CB55165423F91ABA00CF507F /* shared */ = {
+			isa = PBXGroup;
+			children = (
+				CB55165523F91ABA00CF507F /* AppDelegate.swift */,
+			);
+			path = shared;
+			sourceTree = "<group>";
+		};
+		CB55165723F91ADE00CF507F /* storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				CB55165823F91ADE00CF507F /* LaunchScreen.storyboard */,
+				CB55165923F91ADE00CF507F /* Main.storyboard */,
+			);
+			path = storyboard;
+			sourceTree = "<group>";
+		};
+		CBFD797C23F90B0900258610 /* notice-module */ = {
+			isa = PBXGroup;
+			children = (
+				CBFD798823F90C2800258610 /* Services */,
+				CBFD797D23F90B0900258610 /* viewModel */,
+				CBFD797E23F90B0900258610 /* model */,
+				CBFD797F23F90B0900258610 /* view */,
+			);
+			path = "notice-module";
+			sourceTree = "<group>";
+		};
+		CBFD797D23F90B0900258610 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CB55163823F9154F00CF507F /* NoticeViewModel.swift */,
+				CB55164F23F9185C00CF507F /* MovieCellVM.swift */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		CBFD797E23F90B0900258610 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				CB55162F23F911FC00CF507F /* CoreData */,
+				CBFD798223F90B5100258610 /* NoticeModel.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		CBFD797F23F90B0900258610 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				CBFD798023F90B4800258610 /* NoticeViewController.swift */,
+				CBFD798423F90B7400258610 /* MovieCell.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		CBFD798823F90C2800258610 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				CB55162D23F9110600CF507F /* NoticeService.swift */,
+				CBFD798A23F90C2800258610 /* DAO */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CBFD798A23F90C2800258610 /* DAO */ = {
+			isa = PBXGroup;
+			children = (
+				CBFD799223F90CAC00258610 /* NoticeServiceDao.swift */,
+			);
+			path = DAO;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,6 +427,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CB54A8F523F83A5900F5CCD3 /* LaunchScreen.storyboard in Resources */,
+				CB55165B23F91ADE00CF507F /* Main.storyboard in Resources */,
+				CB55165A23F91ADE00CF507F /* LaunchScreen.storyboard in Resources */,
 				CB54A8F223F83A5900F5CCD3 /* Assets.xcassets in Resources */,
 				CB54A8F023F83A5700F5CCD3 /* Main.storyboard in Resources */,
 			);
@@ -408,9 +558,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CB54A8ED23F83A5700F5CCD3 /* ViewController.swift in Sources */,
-				CB54A8E923F83A5700F5CCD3 /* AppDelegate.swift in Sources */,
-				CB54A8EB23F83A5700F5CCD3 /* SceneDelegate.swift in Sources */,
+				CB55164C23F916B200CF507F /* UIColor+SprintPalette.swift in Sources */,
+				CB55165323F91A2A00CF507F /* LogHelper.swift in Sources */,
+				CB55164E23F916B200CF507F /* StringExtension.swift in Sources */,
+				CB55163923F9154F00CF507F /* NoticeViewModel.swift in Sources */,
+				CB55163723F9130600CF507F /* NoticeTable+CoreDataClass.swift in Sources */,
+				CBFD798123F90B4800258610 /* NoticeViewController.swift in Sources */,
+				CB55163623F9130600CF507F /* NoticeTable+CoreDataProperties.swift in Sources */,
+				CB55164B23F916B200CF507F /* UIFont+Extension.swift in Sources */,
+				CB55165623F91ABA00CF507F /* AppDelegate.swift in Sources */,
+				CBFD798523F90B7400258610 /* MovieCell.swift in Sources */,
+				CB55162E23F9110600CF507F /* NoticeService.swift in Sources */,
+				CBFD799323F90CAC00258610 /* NoticeServiceDao.swift in Sources */,
+				CB55164D23F916B200CF507F /* Contant.swift in Sources */,
+				CBFD798323F90B5100258610 /* NoticeModel.swift in Sources */,
+				CB55163323F9122A00CF507F /* MVVM.xcdatamodeld in Sources */,
+				CB55165023F9185C00CF507F /* MovieCellVM.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -747,6 +910,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		CB55163123F9122A00CF507F /* MVVM.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				CB55163223F9122A00CF507F /* MVVM.xcdatamodel */,
+			);
+			currentVersion = CB55163223F9122A00CF507F /* MVVM.xcdatamodel */;
+			path = MVVM.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = CB54A8DD23F83A5700F5CCD3 /* Project object */;
 }

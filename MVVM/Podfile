@@ -12,7 +12,7 @@ target 'MVVM' do
 
   pod 'ImageCacheiOS', '~> 0.0.2'     # comment cocoaPodLink
 
-  pod 'iOSHTTPConnect', '~> 0.0.9'    # comment cocoaPodLink
+  pod 'iOSHTTPConnect', '~> 0.0.10'    # comment cocoaPodLink
 
   pod 'iOSCoreDataConnect', '~> 0.0.2'    # comment cocoaPodLink
 

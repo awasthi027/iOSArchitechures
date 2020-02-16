@@ -10,20 +10,20 @@ import Foundation
 import iOSCoreDataConnect
 import CoreData
 
-struct MyAccountServiceDao {
+struct NoticeServiceDao {
     
-    static func listOfUsers() ->UserProfileList? {
+    static func listOfNotice() ->NoticeInfo? {
           let arrayList = DataManager.convertToJSONArray(moArray: self.managedObjectList( ))
-          let dict = ["data" : arrayList]
+        let dict = ["movie_list" : arrayList, "success" : true]
           guard let data = try? JSONSerialization.data(withJSONObject: dict, options: .prettyPrinted) else{
               return nil}
-          guard let list = try? JSONDecoder().decode(UserProfileList.self, from: data)  else{
+          guard let list = try? JSONDecoder().decode(NoticeInfo.self, from: data)  else{
               return nil}
           return list
       }
       
      static func managedObjectList()->[NSManagedObject] {
-          let issuesList = DataManager.fetchObjects(entity: UserProfileTable.self, predicate:nil, context: DataManager.mainContext)
+          let issuesList = DataManager.fetchObjects(entity: NoticeTable.self, predicate:nil, context: DataManager.mainContext)
           return issuesList
       }
 }
